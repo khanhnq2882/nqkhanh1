@@ -1,0 +1,88 @@
+- ArrayList: a dynamic array for storing the elements, is like an array but no size limit.
+- Features of ArrayList:
++ can contain duplicate elements
++ maintains insertion order
++ non synchronized
++ allow random access because array works at the index basis
++ manipulation is little bit slower than the LinkedList in Java
+
+- LinkedList: a doubly linked list to store the elements, provide a linked list data structure
+- Features of LinkedList:
++ can contain duplicate elements
++ maintains insertion order
++ non synchronized
++ manipulation is fast because no shifting needs to occur
++ can be used as a list, stack or queue
+
+* Comparable between ArrayList(AL) and LinkedList(LL)
+- Similarities: implement List interface and maintains insertion order, non synchronized classes
+- Differences: 
++ Structure:
+      AL uses a dynamic array to store the elements , LL uses a doubly linked list to store the elements
++ Insertion and removal: 
+      AL is slow because after inserting or removing then elements need to be reorder, LL is fasted than AL because it doesn't need to reorder after inserting or removing
++ Retrieval: 
+      AL is faster than LL because elements in ArrayList is stored based on index, LL is slower than AL because it must traverse(duyệt) the elements from first to last
++ Random access: 
+      AL can have random access elements, LL can't have random access elements
++ Using memory:
+      AL require less memory than LL because AL have only stored its data and index, LL is opposite of AL because LL stored its data and reference to element before and after it
++ When to use:
+      AL is better for storing and accessing data, LL is beter for manipulation data example insert or remove.
++ Usage:
+      AL can act as a list only because it implements List only , LL can act as a list and queue both because it implements List and Deque interfaces
+
+- HashSet: is used to create a collection that uses a hash table for storage. It inherits the AbstractSet class and implements Set interface
+- Features of HashSet:
++ stores the elements by using a mechanism called hashing
++ contains unique elements only
++ allow null value
++ non synchroized
++ doesn't maintain insertion order
++ the best approach for search operations
++ the initial default capacity of HashSet is 16, and the load factor is 0.75
+
+- The difference between List and Set: A list can contain duplicate elements, Set contains unique elements only
+
+- LinkedHashSet: is a Hashtable and Linked list implementation of the set interface. It inherits HashSet class and implements Set interface.
+- Features of LinkedHashSet:
++ contains unique elements only like HashSet
++ provides all optional set operation and permits null elements
++ non synchronized
++ maintains insertion order
+
+- TreeSet: implements the Set interface that uses a tree for storage. The objects of the TreeSet class are stored in ascending order
+- Features of TreeSet:
++ contains unique elements only like HashSet
++ access and retrieval times are quiet fast
++ doesn't allow null element
++ non synchronized
++ maintains ascending order
+
+- HashMap: implements the Map interface which allows us to store key and value pair, where keys should be unique
+- Features of HashMap:
++ contains values based on the key
++ contains only unique keys
++ may have one null key and multiple null values
++ non synchronized
++ maintains no order
++ the initial default capacity of Java HashMap class is 16 with a load factor of 0.75
+
+- Difference between HashSet and HashMap: HashSet contains only values whereas HashMap contains an entry(key and value).
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
